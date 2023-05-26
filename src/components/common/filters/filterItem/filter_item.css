@@ -1,0 +1,13 @@
+.filter-item{
+    display: flex;
+    padding: 6px ;
+    background-color: var( --primary-bg);
+    color: var(--filter-text);
+    border:0.5px solid var(--filter-text);
+    margin: 12px 12px 12px 0px;
+    border-radius: 0.6rem;
+    justify-content: flex-start;
+}
+.filter-name{
+    margin-left: 5px;
+}

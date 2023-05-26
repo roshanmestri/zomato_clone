@@ -1,0 +1,91 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
+@import '../../../styles/variables.css';
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.header-logo{
+    height: 27px;
+    max-width: 140px;
+    margin-right: 24px  ;
+}
+.header-right{
+    display: flex;
+    flex: 1; /* taking 1 fourth width */
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+.header-location-search-container{
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: var( --primary-box-shadow);
+    border: 1px solid var(--border-white);
+    background-color: var(--primary-bg);
+    width: 70%;
+}
+
+.location-wrapper{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.location-icon-name{
+    color: var( --zomato-grey);
+    display: flex;
+
+}
+.location-icon{
+    display: flex;
+    color: var(--zomato-red);
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+
+.location-search-seperator{
+    height: 20px;
+    border: 0.5px solid  var(  --grey) ;
+}
+
+.header-searchbar{
+    display: flex;
+    flex: 2; /* taking 2 fourth width */
+}
+
+.search-icon{
+    font-size: 20px;
+    color: var(--zomato-grey);
+    margin: 0px 12px;
+}
+
+.search-input{
+    border: none;
+    outline: none;
+    width: 60%;
+    font-size: 14px;
+}
+
+.profile-wrappper{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    align-items: center;
+}
+.header-profile-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.header-username{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.profile-options-icon{
+    font-size: 20px;
+}
