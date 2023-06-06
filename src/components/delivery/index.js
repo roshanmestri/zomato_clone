@@ -1,6 +1,9 @@
 import React from 'react'
 import Filters from '../common/filters'
 import DeliveryCollections from './deliveryCollection'
+import BrandCollections from './TopBrands'
+import ExploreSection from '../common/exploreSection'
+import { restaurantList } from '../../data/restaurants'
 
 
 const Delivery = () => {
@@ -32,12 +35,17 @@ const Delivery = () => {
       title: "Great Offers"
     },
   ]
+
+  const Restaurants = restaurantList;
+
   return (
     <div>
       <div className='max-width'>
       <Filters filterList={DeliveryFilters}/>
     </div>
     <DeliveryCollections/>
+    <BrandCollections/>
+    <ExploreSection list= {Restaurants} collectionName={"Delivery Restaurants in Turbhe"}/>
     </div>
     
   )

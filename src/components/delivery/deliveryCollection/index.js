@@ -3,6 +3,7 @@ import  './deliveryCollection.css'
 import PrevArrow from '../../common/carousel/preArrow';
 import Slider from 'react-slick';
 import DeliveryItem from './deliveryItem';
+import NextArrow from '../../common/carousel/nextArrow';
 
 const DeliveryCollections = () => {
     const TypesOfFood=[
@@ -57,12 +58,12 @@ const DeliveryCollections = () => {
       speed: 500,
       slidesToShow: 6,
       slidesToScroll: 1,
-      nextArrow: <nextArrow/>,
+      nextArrow: <NextArrow/>,
       prevArrow: <PrevArrow/>
     };
   return (
-    <div className='delivery-collections'>
-        <div className='max-width'>
+    <div className='delivery-collections '>
+        <div className='max-width' style={{paddingTop:'2rem' ,paddingBottom:'2rem'}}>
             <div className='collection-title'>Eat what makes you happy</div>
             <Slider {...settings}>
                 {

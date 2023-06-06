@@ -1,6 +1,6 @@
 import React from 'react'
 
-const nextArrow = (props) => {
+const NextArrow = (props) => {
     const { className, style, onClick } = props
     return (
         <div className={className}
@@ -12,4 +12,4 @@ const nextArrow = (props) => {
     )
 }
 
-export default nextArrow
+export default NextArrow

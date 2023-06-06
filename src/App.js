@@ -7,6 +7,8 @@ import TabOptions from './components/common/tabOptions';
 import Delivery from './components/delivery';
 import DiningOut from './components/dining Out';
 import NightLife from './components/night Life';
+import Download from './components/pdf/Download';
+import { PDFViewer } from '@react-pdf/renderer';
 
 function App() {
   const [activeTab ,setActiveTab]= useState('Delivery')
@@ -16,6 +18,9 @@ function App() {
      <TabOptions activeTab={activeTab} setActiveTab ={setActiveTab} />
      {getCorrectScreen(activeTab)}
      <Footer/>
+     <PDFViewer>
+    <Download />
+  </PDFViewer>
     </div>
   );
 }
